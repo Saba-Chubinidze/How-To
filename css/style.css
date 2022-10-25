@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 3 version
+*/
+
 .container{
     max-width: 1920px;
     width: 100%;
@@ -7,9 +14,15 @@
 header{
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .logo{
     width: 122px;
@@ -21,9 +34,14 @@ nav{
     margin-left: 40%;
 }
 ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     
 }
 li{
@@ -34,7 +52,8 @@ li{
 li:hover{
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-color: black;   
+    -webkit-text-decoration-color: black;
+            text-decoration-color: black;   
 }
 .search:hover{
     cursor: pointer;
@@ -69,12 +88,18 @@ h1{
 article{
     width: 100%;
     height: 563px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 95px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 .box{
-    flex: 20%;
+    -webkit-box-flex: 20%;
+        -ms-flex: 20%;
+            flex: 20%;
     height: 100%;
 }
 .box img{
@@ -97,7 +122,8 @@ p{
 .plink:hover{
     cursor: pointer;
     text-decoration: underline;
-    text-decoration-color: #707070;;
+    -webkit-text-decoration-color: #707070;
+            text-decoration-color: #707070;;
 }
 /* Section two end */
 
@@ -105,14 +131,19 @@ p{
 /* Loadmore */
 .loadmore{
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
 }
 h2{
     font-size: 2rem;
     text-decoration: underline;
-    text-decoration-color: #707070;
+    -webkit-text-decoration-color: #707070;
+            text-decoration-color: #707070;
     color: #707070;
 }
 
@@ -134,8 +165,12 @@ h2{
 }
 footer{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     padding: 50px 0;
 }
 h5{
@@ -149,6 +184,8 @@ h6{
     font-family: 'Raleway', sans-serif;
 }
 .box5{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
 }
@@ -163,8 +200,13 @@ h6{
         height: 250px;
     }
     footer{
-        flex-direction: column;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         row-gap: 20px;
     }
     .box2{
@@ -172,13 +214,20 @@ h6{
     }
     .section2{
         height: auto;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     article{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
     .box{
-        flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     }
     .box:nth-child(3){
         display: none;
@@ -190,8 +239,6 @@ h6{
         margin-top: 50px;
     }
 }
-
-
 
 
 
